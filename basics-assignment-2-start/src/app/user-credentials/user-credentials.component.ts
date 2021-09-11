@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserCredentialsComponent implements OnInit {
 
-  userName = ""
+  userName = '';
 
   constructor() { }
 
@@ -15,6 +15,6 @@ export class UserCredentialsComponent implements OnInit {
   }
 
   clearUserName() {
-    this.userName = ""
+    this.userName = '';
   }
 }
