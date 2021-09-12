@@ -1,0 +1,15 @@
+<div class="container">
+    <button type="button" class="btn btn-primary" 
+        (click) = "show()">
+        Hover Me!
+    </button>
+    <p *ngIf="showText" class="showTextPara">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint aspernatur fugit delectus sit debitis tempore eaque suscipit libero excepturi! Eveniet tenetur iste quod dicta facilis eius esse similique magni fugiat.
+    </p>
+    <p *ngFor = "let counts of allClick"
+        [ngStyle]="{'background-color': counts>=5 ? 'blue' : 'white'}"
+        [ngClass]="{countColor: counts>=5}">
+        Count = {{counts}}
+    </p>
+</div>
+
