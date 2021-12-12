@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-game-control (valueEmitted) = "onValueTriggered($event)"></app-game-control>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <app-odd *ngFor = "let number of oddNumber" [oddNumber] = "number"></app-odd>
+        <app-even *ngFor = "let number of evenNumber" [evenNumber] = "number"></app-even>
+    </div>
+  </div>
+</div>
