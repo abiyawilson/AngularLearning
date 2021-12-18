@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { WarningComponent } from './warning/warning.component';
-import { SucessComponent } from './sucess/sucess.component';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WarningComponent,
-    SucessComponent
+    ActiveUsersComponent,
+    InactiveUsersComponent
   ],
   imports: [
     BrowserModule,
